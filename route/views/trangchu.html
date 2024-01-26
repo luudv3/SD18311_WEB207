@@ -14,4 +14,14 @@
         Tạo 1 form nhập 2 số
         Thực hiện tính tổng của 2 số
      -->
+     <form ng-submit="tinhTong()">
+        <label for="" class="form-label">Số thứ 1</label>
+        <input type="text" class="form-control" ng-model="number.one">
+
+        <label for="" class="form-label">Số thứ 2</label>
+        <input type="text" class="form-control" ng-model="number.two">
+
+        <button class="btn btn-success">Tính tổng</button>
+        <p>Kết quả : {{sum}}</p>
+     </form>
 </div>

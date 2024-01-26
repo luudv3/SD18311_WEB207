@@ -1,14 +1,22 @@
 {
-    "employees": [
-      {
-        "id": 1,
-        "name": "Pankaj",
-        "salary": "10000"
-      },
-      {
-        "name": "David",
-        "salary": "5000",
-        "id": 2
-      }
-    ]
-  }
+  "student": [
+    {
+      "ten": "Đặng Vũ Lưu",
+      "namsinh": 2005,
+      "chuyennganh": "CNTT",
+      "id": "1"
+    },
+    {
+      "ten": "Đặng Vũ Lưu 2",
+      "namsinh": 2006,
+      "chuyennganh": "CNTT",
+      "id": "1"
+    },
+    {
+      "id": "ee4d",
+      "ten": "Hải yến",
+      "namsinh": "2005",
+      "chuyennganh": "UDPM"
+    }
+  ]
+}
