@@ -1,26 +1,23 @@
-<div>
-    <h1 class="text-center">{{ title }}</h1>
-    
-    <div>
-       <form ng-submit="addStudent()">
-            <label for="" class="form-label">Họ và tên</label>
-            <input type="text" class="form-control " ng-model="student.name">
-            <div ng-if="kiemTra.name" class="text-danger">Bạn chưa nhập tên</div>
-
-            <label for="" class="form-label">Năm sinh</label>
+<div class="card mt-5">
+    <h1 class="card-header">{{ title }}</h1>
+    <div class="card-body">
+      <form ng-submit="addStudent()">
+        <label for="" class="form-label">Họ và tên:</label>
+            <input type="text" class="form-control" ng-model="student.name">
+            <div ng-if="kiemTra.name" class="text-danger">
+              Vui lòng nhập họ tên !
+            </div>
+      
+            <label for="" class="form-label">Năm sinh:</label>
             <input type="text" class="form-control" ng-model="student.year">
-            <div ng-if="kiemTra.year" class="text-danger">Bạn chưa nhập năm sinh</div>
 
-            <label for="" class="form-label">Chuyên ngành</label>
-            <input type="text" class="form-control" ng-model="student.course">
-            <div ng-if="kiemTra.course" class="text-danger">Bạn chưa nhập chuyên ngành</div>
-
+            <label for="" class="form-label">Chuyên ngành:</label>
+            <input type="text" class="form-control" ng-model="student.cause">
             <div class="text-center mt-3">
-                <button type="submit" class="btn btn-success">Thêm</button>
-                <button type="reset" class="btn btn-secondary">Reset</button>
-               </div>
-               
-       </form>
-     
+                <button type="submit" class="btn btn-success">Thêm mới</button>
+                <button type="reset" class="btn btn-secondary">Resset</button>
+              </div>
+      </form>
+      
     </div>
 </div>
