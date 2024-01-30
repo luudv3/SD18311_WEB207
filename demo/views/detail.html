@@ -1,0 +1,25 @@
+<div>
+    <h1 class="text-center">{{ title }}</h1>
+    
+    <div>
+       <form>
+            <label for="" class="form-label">Họ và tên</label>
+            <input type="text" class="form-control" ng-model="student.name" >
+            
+            <label for="" class="form-label">Năm sinh</label>
+            <input type="text" class="form-control" ng-model="student.year">
+
+            <label for="" class="form-label">Chuyên ngành</label>
+            <input type="text" class="form-control" ng-model="student.course">
+
+            <div class="text-center mt-3">
+                <button type="submit" class="btn btn-success">Quay lại</button>
+                <a href="#!/edit-student/{{ student.editID }}">
+                    <button type="reset" class="btn btn-secondary">Chỉnh sửa</button>
+                </a>
+            </div>
+               
+       </form>
+     
+    </div>
+</div>

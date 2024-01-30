@@ -5,23 +5,27 @@
     </a>
     <div>
         <table class="table">
-           <thead>
+            <thead>
                 <th>STT</th>
                 <th>Họ và tên</th>
                 <th>Năm sinh</th>
                 <th>Chuyên ngành</th>
                 <th>thao tác</th>
-           </thead>
-           <tr ng-repeat="item in liststudent">
-            <td>{{ $index + 1 }}</td>
-            <td>{{ item.ten }}</td>
-            <td>{{ item.namsinh}}</td>
-            <td>{{ item.chuyennganh}}</td>
-            <td>
-                <button class="btn btn-warning">Chi tiết</button>
-                <button class="btn btn-danger">Xóa</button> 
-            </td>
-           </tr>
+            </thead>
+            <tr ng-repeat="item in liststudent">
+                <td>{{ $index + 1 }}</td>
+                <td>{{ item.ten }}</td>
+                <td>{{ item.namsinh}}</td>
+                <td>{{ item.chuyennganh}}</td>
+                <td>
+                    <a href="#!/detail-student/{{item.id}}">
+                        <button class="btn btn-warning">Chi tiết</button>
+                    </a>
+
+                    <button ng-click="deleteStudent(item.id)"
+                        class="btn btn-danger">Xóa</button>
+                </td>
+            </tr>
         </table>
     </div>
 </div>
